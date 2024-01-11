@@ -4,7 +4,7 @@ import requests
 import sqlite3
 import os
 
-# 変数urlにURLを格納する
+# 変数urlにURLを格納する。
 url = 'https://db.netkeiba.com/race/202306050811/'
 
 response = requests.get(url)
