@@ -56,7 +56,7 @@ sql_create_table_git_hw1 = 'CREATE TABLE IF NOT EXISTS git_hw1(horse_name TEXT, 
 cur.execute(sql_create_table_git_hw1)
 
 # データを挿入するSQL
-sql_insert_many = "INSERT INTO git_hw1(horse_name, race_time, horse_weight) VALUES (?, ?, ?);"
+sql_insert_many = "INSERT INTO git_hw1 VALUES (?, ?, ?);"
 cur.executemany(sql_insert_many, [(hw["horse_name"], hw["race_time"], hw["horse_weight"]) for hw in d_list])
 
 # コミット処理（データ操作を反映させる）
